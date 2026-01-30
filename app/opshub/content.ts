@@ -121,7 +121,7 @@ export const whatYouGet = {
 }
 
 export const entitySection = {
-  title: "An entity built for global operations",
+  title: "Operations built for global teams",
   subtitle:
     "This structure gives teams a credible way to sign contracts, issue invoices, pay contributors, and hold IP through an entity instead of through individuals, while staying compatible with globally distributed operations.",
   switzerlandTitle: "Switzerland, built for modern teams",
@@ -149,10 +149,10 @@ export const howItWorks = {
   steps: [
     {
       number: 1,
-      title: "Legal Setup (templates + counsel review)",
+      title: "Document Assembly (templates + optional counsel review)",
       description:
-        "Create your Operational Hub and assemble your contracts with templates for Articles/Bylaws, MPA, governance minutes, contributor agreements and membership records. If required, local Counsel reviews and customizes templates.",
-      counselNote: "External Swiss counsel reviews and customizes templates (not legal advice).",
+        "Choose your entity structure and assemble founding documents with templates for Articles/Bylaws, MPA, governance minutes, contributor agreements and membership records. Optional Swiss counsel review available for template customization.",
+      counselNote: "Optional Swiss counsel review available for template customization (not legal advice).",
     },
     {
       number: 2,

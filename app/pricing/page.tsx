@@ -5,7 +5,7 @@ import { SharedFooter } from "../_components/SharedFooter"
 
 export const metadata: Metadata = {
   title: "Pricing | Operational Hub",
-  description: "Transparent pricing for your back office operations. Entity setup, accounting, payroll, and compliance with no hidden fees. Plans starting at $500/contributor/month.",
+  description: "Transparent pricing for your back office operations. Entity setup, accounting, payroll, and compliance with no hidden fees. Plans starting at $250/contributor/month.",
 }
 
 export default function PricingPage() {
@@ -40,7 +40,7 @@ export default function PricingPage() {
 
             <div className="mb-6">
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">$750</span>
+                <span className="text-3xl font-bold">$1,250</span>
                 <span className="text-gray-500">/month</span>
               </div>
               <p className="text-gray-500 text-sm mt-1">+ per-invoice fee</p>
@@ -50,7 +50,7 @@ export default function PricingPage() {
             <ul className="space-y-3 mb-8 flex-grow">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Swiss association entity</span>
+                <span className="text-sm text-gray-700">Entity document assembly</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -58,7 +58,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Annual tax filing</span>
+                <span className="text-sm text-gray-700">Tax ID and annual filing</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -96,10 +96,10 @@ export default function PricingPage() {
 
             <div className="mb-6">
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">$750</span>
+                <span className="text-3xl font-bold">$1,250</span>
                 <span className="text-gray-500">/month</span>
               </div>
-              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500/month per regular contributor</p>
+              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $250/month per regular contributor</p>
               <p className="text-gray-400 text-xs mt-1">+ one-time setup fee</p>
             </div>
 
@@ -215,7 +215,7 @@ export default function PricingPage() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Swiss association entity</td>
+                  <td className="py-3 px-4 text-gray-700">Entity document assembly</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -233,13 +233,13 @@ export default function PricingPage() {
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Legal document templates</td>
+                  <td className="py-3 px-4 text-gray-700">Document assembly templates</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Annual tax filing</td>
+                  <td className="py-3 px-4 text-gray-700">Tax ID and annual filing</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>

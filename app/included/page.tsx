@@ -287,7 +287,7 @@ export default function WhatsIncludedPage() {
               <div className="pb-8">
                 <h3 className="font-semibold mb-2">Setup (Weeks 1-4)</h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  We form your Swiss association with legal counsel review, set up your registered address, configure payment processors, and prepare contributor agreement templates.
+                  Assemble your entity's founding documents with guided templates and optional counsel review, set up your registered address, configure payment processors, and prepare contributor agreement templates.
                 </p>
                 <div className="flex items-center gap-2 text-xs text-gray-500">
                   <Clock className="w-3 h-3" />
