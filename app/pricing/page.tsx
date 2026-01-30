@@ -40,7 +40,7 @@ export default function PricingPage() {
 
             <div className="mb-6">
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">$1,250</span>
+                <span className="text-3xl font-bold">$750</span>
                 <span className="text-gray-500">/month</span>
               </div>
               <p className="text-gray-500 text-sm mt-1">+ per-invoice fee</p>
