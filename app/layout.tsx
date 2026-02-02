@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   keywords: ['back office', 'operations', 'Swiss entity', 'invoicing', 'payroll', 'compliance', 'global teams', 'crypto operations', 'open source', 'DAO'],
   authors: [{ name: 'Achra' }],
   creator: 'Achra',
+  verification: {
+    google: 'ptTmtNwyHPSLXQUhGmibYV8NArB45J13WIqy5UuaufM',
+  },
   icons: {
     icon: '/Achra-abstract.png',
     apple: '/Achra-abstract.png',
