@@ -1,10 +1,14 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { getAllSlugs, getPostBySlug } from "@/lib/blog"
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
 import { SharedFooter } from "@/app/_components/SharedFooter"
+
+const SITE_URL = "https://operationalhub.io"
+const DEFAULT_OG_IMAGE = "/og-default.png"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -23,9 +27,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Post Not Found" }
   }
 
+  const ogImage = post.image || DEFAULT_OG_IMAGE
+
   return {
     title: `${post.title} | Operational Hub Blog`,
     description: post.description,
+    alternates: {
+      canonical: `${SITE_URL}/blog/${slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: "article",
+      url: `${SITE_URL}/blog/${slug}`,
+      images: [{ url: ogImage }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [ogImage],
+    },
   }
 }
 
@@ -37,8 +59,33 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound()
   }
 
+  const ogImage = post.image || DEFAULT_OG_IMAGE
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    image: `${SITE_URL}${ogImage}`,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Achra",
+      url: "https://achra.com",
+    },
+  }
+
   return (
     <div className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Header */}
       <header className="border-b border-gray-200 bg-white">
         <div className="container mx-auto max-w-3xl px-4 py-6 md:px-6">
@@ -54,6 +101,20 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       {/* Article */}
       <article className="container mx-auto max-w-3xl px-4 py-12 md:px-6">
+        {/* Header Image */}
+        {post.image && (
+          <div className="mb-8 overflow-hidden rounded-xl">
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={1200}
+              height={630}
+              className="w-full object-cover"
+              priority
+            />
+          </div>
+        )}
+
         {/* Title & Meta */}
         <header className="mb-8 space-y-4">
           <h1 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">{post.title}</h1>

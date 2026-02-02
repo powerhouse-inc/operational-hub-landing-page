@@ -11,6 +11,7 @@ export interface BlogPost {
   date: string
   author: string
   description: string
+  image?: string
   content: string
   readingTime: string
 }
@@ -34,6 +35,7 @@ export function getAllPosts(): BlogPost[] {
       date: data.date || "",
       author: data.author || "Achra Team",
       description: data.description || "",
+      image: data.image || undefined,
       content,
       readingTime: readingTime(content).text,
     }
@@ -59,6 +61,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     date: data.date || "",
     author: data.author || "Achra Team",
     description: data.description || "",
+    image: data.image || undefined,
     content,
     readingTime: readingTime(content).text,
   }

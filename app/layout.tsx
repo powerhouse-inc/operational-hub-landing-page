@@ -8,6 +8,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://operationalhub.io'),
   title: {
     default: 'Operational Hub - Less Admin. More Building.',
     template: '%s | Operational Hub',
@@ -26,11 +27,13 @@ export const metadata: Metadata = {
     siteName: 'Operational Hub',
     title: 'Operational Hub - Less Admin. More Building.',
     description: 'A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity.',
+    images: [{ url: '/og-default.png' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Operational Hub - Less Admin. More Building.',
     description: 'A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team.',
+    images: ['/og-default.png'],
   },
 }
 

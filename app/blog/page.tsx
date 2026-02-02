@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
+import Image from "next/image"
 import { ArrowRight, Calendar, User, Clock } from "lucide-react"
 import { SharedHeader } from "@/app/_components/SharedHeader"
 import { SharedFooter } from "@/app/_components/SharedFooter"
@@ -39,6 +40,17 @@ export default function BlogPage() {
                 className="group rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:border-[var(--achra)]/30"
               >
                 <Link href={`/blog/${post.slug}`} className="block space-y-4">
+                  {post.image && (
+                    <div className="overflow-hidden rounded-lg -mx-6 -mt-6 mb-2">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={1200}
+                        height={630}
+                        className="w-full object-cover"
+                      />
+                    </div>
+                  )}
                   <h2 className="text-2xl font-bold text-gray-900 group-hover:text-[var(--achra)] transition-colors">
                     {post.title}
                   </h2>
