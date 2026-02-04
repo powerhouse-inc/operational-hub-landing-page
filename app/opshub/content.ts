@@ -149,10 +149,10 @@ export const howItWorks = {
   steps: [
     {
       number: 1,
-      title: "Document Assembly (templates + optional counsel review)",
+      title: "Swiss Association Formation",
       description:
-        "Choose your entity structure and assemble founding documents with templates for Articles/Bylaws, MPA, governance minutes, contributor agreements and membership records. Optional Swiss counsel review available for template customization.",
-      counselNote: "Optional Swiss counsel review available for template customization (not legal advice).",
+        "Form your Swiss association with licensed counsel, registered address setup, legal document templates, and VAT documentation. A proven structure for global teams.",
+      counselNote: "Formation handled with licensed Swiss counsel.",
     },
     {
       number: 2,
@@ -328,7 +328,7 @@ export const poweredByPowerhouse = {
 }
 
 export const differentiation = {
-  title: "More Than Entity Setup",
+  title: "More Than Entity Formation",
   description:
     "Unlike standalone entity brokers, this is an integrated bundle with operator support, workflow systems, and clean recordkeeping built in from day one.",
 }

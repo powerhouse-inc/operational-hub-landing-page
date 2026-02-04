@@ -63,7 +63,7 @@ export default function WhatsIncludedPage() {
 
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
-                <h4 className="font-medium mb-2">Monthly bookkeeping</h4>
+                <h4 className="font-medium mb-2">Monthly accounting & close</h4>
                 <p className="text-sm text-gray-600">
                   We categorize transactions, reconcile accounts, and keep your books accurate and up-to-date every month.
                 </p>
@@ -81,7 +81,7 @@ export default function WhatsIncludedPage() {
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
-                <h4 className="font-medium mb-2">Tax filing</h4>
+                <h4 className="font-medium mb-2">Annual tax filing</h4>
                 <p className="text-sm text-gray-600">
                   We prepare and file your Swiss tax returns annually. No scrambling at year-end, no surprises.
                 </p>
@@ -100,7 +100,7 @@ export default function WhatsIncludedPage() {
 
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
-                <h4 className="font-medium mb-2">Invoice processing</h4>
+                <h4 className="font-medium mb-2">Invoice management</h4>
                 <p className="text-sm text-gray-600">
                   Contributors submit invoices, we verify and process them through approval workflows, ready for payout.
                 </p>
@@ -287,7 +287,7 @@ export default function WhatsIncludedPage() {
               <div className="pb-8">
                 <h3 className="font-semibold mb-2">Setup (Weeks 1-4)</h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Assemble your entity's founding documents with guided templates and optional counsel review, set up your registered address, configure payment processors, and prepare contributor agreement templates.
+                  Swiss association formation with licensed counsel, registered address setup, legal document templates, and VAT documentation.
                 </p>
                 <div className="flex items-center gap-2 text-xs text-gray-500">
                   <Clock className="w-3 h-3" />

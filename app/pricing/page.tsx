@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
-import { Check, ArrowRight, Users, Building, Briefcase, FileText, CreditCard, UserPlus, Headphones } from "lucide-react"
+import { Check, ArrowRight, Users, Building, Briefcase, FileText, CreditCard, Shield, BarChart3 } from "lucide-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
 
 export const metadata: Metadata = {
   title: "Pricing | Operational Hub",
-  description: "Transparent pricing for your back office operations. Entity setup, accounting, payroll, and compliance with no hidden fees. Plans starting at $250/contributor/month.",
+  description: "Transparent pricing for your back office operations. Swiss association formation, accounting, payouts, and compliance with no hidden fees. Plans starting at $250/contributor/month.",
 }
 
 export default function PricingPage() {
@@ -50,23 +50,23 @@ export default function PricingPage() {
             <ul className="space-y-3 mb-8 flex-grow">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Entity document assembly</span>
+                <span className="text-sm text-gray-700">Swiss association formation</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Official registered address</span>
+                <span className="text-sm text-gray-700">Registered address (Zug)</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Tax ID and annual filing</span>
+                <span className="text-sm text-gray-700">Annual tax filing</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Basic bookkeeping</span>
+                <span className="text-sm text-gray-700">Monthly accounting & close</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Invoice processing</span>
+                <span className="text-sm text-gray-700">Invoice management</span>
               </li>
             </ul>
 
@@ -110,11 +110,11 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Full monthly accounting</span>
+                <span className="text-sm text-gray-700">Expense policies (role-based)</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Contributor onboarding</span>
+                <span className="text-sm text-gray-700">Contributor onboarding & operations</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -126,7 +126,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Reporting dashboard</span>
+                <span className="text-sm text-gray-700">Unlimited invoicing</span>
               </li>
             </ul>
 
@@ -164,11 +164,11 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Multiple entity structures</span>
+                <span className="text-sm text-gray-700">Multiple entities</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Custom reporting</span>
+                <span className="text-sm text-gray-700">Custom workflows & reporting</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -176,7 +176,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Volume-based pricing</span>
+                <span className="text-sm text-gray-700">Admin portal</span>
               </li>
             </ul>
 
@@ -215,7 +215,7 @@ export default function PricingPage() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Entity document assembly</td>
+                  <td className="py-3 px-4 text-gray-700">Swiss association formation</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -227,31 +227,55 @@ export default function PricingPage() {
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
+                  <td className="py-3 px-4 text-gray-700">Legal document templates</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="py-3 px-4 text-gray-700">VAT documentation</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Annual tax filing</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr className="bg-white">
                   <td className="py-3 px-4 text-gray-700">Invoice management</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Monthly accounting & close</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Document assembly templates</td>
+                  <td className="py-3 px-4 text-gray-700">Reimbursement management</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Tax ID and annual filing</td>
+                  <td className="py-3 px-4 text-gray-700">Monthly expense reports</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Monthly accounting & close</td>
+                  <td className="py-3 px-4 text-gray-700">Expense policies (role-based)</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Contributor operations</td>
+                  <td className="py-3 px-4 text-gray-700">Contributor onboarding & operations</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -280,6 +304,18 @@ export default function PricingPage() {
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
+                <tr className="bg-white">
+                  <td className="py-3 px-4 text-gray-700">Admin portal</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Custom workflows & reporting</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -298,24 +334,24 @@ export default function PricingPage() {
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
-                  <UserPlus className="w-5 h-5 text-[rgb(122,58,255)]" />
+                  <Building className="w-5 h-5 text-[rgb(122,58,255)]" />
                 </div>
-                <h3 className="font-semibold">Contributor onboarding</h3>
+                <h3 className="font-semibold">Exchange account setup</h3>
               </div>
               <p className="text-sm text-gray-600">
-                Full onboarding for new contributors including KYC, documentation collection, payment setup, and agreement execution.
+                Setup of centralized exchange accounts (Kraken, Coinbase, Binance, and more).
               </p>
             </div>
 
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
-                  <FileText className="w-5 h-5 text-[rgb(122,58,255)]" />
+                  <Shield className="w-5 h-5 text-[rgb(122,58,255)]" />
                 </div>
-                <h3 className="font-semibold">Payroll processing</h3>
+                <h3 className="font-semibold">AML monitoring & compliance reporting</h3>
               </div>
               <p className="text-sm text-gray-600">
-                Managed payroll for regular contributors with automated scheduling, tax documentation, and multi-currency support.
+                Regular compliance checks, wallet monitoring, and compliance reports.
               </p>
             </div>
 
@@ -324,22 +360,22 @@ export default function PricingPage() {
                 <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
                   <CreditCard className="w-5 h-5 text-[rgb(122,58,255)]" />
                 </div>
-                <h3 className="font-semibold">Credit card assistance</h3>
+                <h3 className="font-semibold">Card & spend operations</h3>
               </div>
               <p className="text-sm text-gray-600">
-                Corporate card setup and management for authorized team expenses with spending controls and reconciliation.
+                Corporate card management with spending controls and transaction monitoring.
               </p>
             </div>
 
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
-                  <Headphones className="w-5 h-5 text-[rgb(122,58,255)]" />
+                  <BarChart3 className="w-5 h-5 text-[rgb(122,58,255)]" />
                 </div>
-                <h3 className="font-semibold">Legal partner access</h3>
+                <h3 className="font-semibold">Audit support</h3>
               </div>
               <p className="text-sm text-gray-600">
-                Direct access to vetted Swiss legal counsel for contract review, regulatory questions, and specialized advice.
+                Coordination of financial information to support external audits.
               </p>
             </div>
           </div>
@@ -368,7 +404,7 @@ export default function PricingPage() {
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold mb-3 text-gray-500">What doesn't count</h3>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>One-time vendors or contractors</li>
+                <li>One-time vendors or service providers</li>
                 <li>Unpaid contributors or advisors</li>
                 <li>Grant recipients you're funding</li>
               </ul>
