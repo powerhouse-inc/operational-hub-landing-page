@@ -5,6 +5,7 @@ import { notFound } from "next/navigation"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { getAllPosts, getAllSlugs, getPostBySlug } from "@/lib/blog"
 import { Calendar, User, Clock, ArrowLeft, ArrowRight } from "lucide-react"
+import { SharedHeader } from "@/app/_components/SharedHeader"
 import { SharedFooter } from "@/app/_components/SharedFooter"
 import { TableOfContents } from "./TableOfContents"
 
@@ -98,18 +99,18 @@ export default async function BlogPostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Header */}
-      <header className="border-b border-gray-200 bg-white">
-        <div className="container mx-auto max-w-6xl px-4 py-6 md:px-6">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-1 text-sm text-[var(--achra)] hover:text-[var(--achra-hover)]"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Blog
-          </Link>
-        </div>
-      </header>
+      <SharedHeader currentPage="blog" />
+
+      {/* Back to Blog link */}
+      <div className="container mx-auto max-w-6xl px-4 pt-6 md:px-6">
+        <Link
+          href="/blog"
+          className="inline-flex items-center gap-1 text-sm text-[var(--achra)] hover:text-[var(--achra-hover)]"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          Back to Blog
+        </Link>
+      </div>
 
       {/* Main content with optional TOC sidebar */}
       <div className="container mx-auto max-w-6xl px-4 py-12 md:px-6">
