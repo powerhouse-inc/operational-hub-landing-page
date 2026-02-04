@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { MDXRemote } from "next-mdx-remote/rsc"
+import rehypeSlug from "rehype-slug"
 import { getAllPosts, getAllSlugs, getPostBySlug } from "@/lib/blog"
 import { Calendar, User, Clock, ArrowLeft, ArrowRight } from "lucide-react"
 import { SharedHeader } from "@/app/_components/SharedHeader"
@@ -156,7 +157,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
             {/* Main Content */}
             <div className="prose max-w-none">
-              <MDXRemote source={mainContent} />
+              <MDXRemote source={mainContent} options={{ mdxOptions: { rehypePlugins: [rehypeSlug] } }} />
             </div>
 
             {/* CTA Box before FAQ */}
@@ -190,7 +191,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             {faqContent && (
               <div className="mt-12 pt-8 border-t border-gray-200">
                 <div className="prose max-w-none prose-h2:text-2xl prose-h2:mb-6 prose-h3:text-lg prose-h3:font-semibold prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-gray-900 prose-p:text-gray-600">
-                  <MDXRemote source={faqContent} />
+                  <MDXRemote source={faqContent} options={{ mdxOptions: { rehypePlugins: [rehypeSlug] } }} />
                 </div>
               </div>
             )}

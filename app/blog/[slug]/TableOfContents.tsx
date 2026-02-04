@@ -12,22 +12,34 @@ interface TableOfContentsProps {
   content: string
 }
 
+// Match rehype-slug's ID generation
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "") // Remove special chars except spaces and hyphens
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/-+/g, "-") // Replace multiple hyphens with single
+    .replace(/^-|-$/g, "") // Remove leading/trailing hyphens
+}
+
 export function TableOfContents({ content }: TableOfContentsProps) {
   const [headings, setHeadings] = useState<TOCItem[]>([])
   const [activeId, setActiveId] = useState<string>("")
 
   useEffect(() => {
-    // Parse headings from markdown content
+    // Parse headings from markdown content (## headings only)
     const headingRegex = /^##\s+(.+)$/gm
     const matches: TOCItem[] = []
     let match
 
     while ((match = headingRegex.exec(content)) !== null) {
-      const text = match[1].replace(/\*\*/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-      const id = text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
+      // Clean the text: remove markdown formatting
+      const text = match[1]
+        .replace(/\*\*/g, "") // Remove bold
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Remove links, keep text
+        .trim()
+
+      const id = slugify(text)
       matches.push({ id, text, level: 2 })
     }
 
