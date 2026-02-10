@@ -218,7 +218,7 @@ export default function PricingPage() {
               </div>
               <h2 className="text-2xl font-bold mb-3">What&apos;s included in your setup fee</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Entity formation is handled by MME, a leading Swiss law firm specializing in digital and blockchain-native organizations.
+                Entity formation is handled by <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer" className="text-[rgb(122,58,255)] hover:underline">MME</a>, a leading Swiss law firm specializing in digital and blockchain-native organizations.
               </p>
             </div>
           </ScrollReveal>
@@ -539,7 +539,7 @@ export default function PricingPage() {
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="font-semibold mb-2">What about legal support?</h3>
                 <p className="text-gray-600 text-sm">
-                  Entity formation is handled by MME, a leading Swiss law firm specializing in legal, tax, and compliance for digital organizations. MME counsel is included in your one-time setup fee. Additional legal work beyond formation is available through MME, billed separately.
+                  Entity formation is handled by <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer" className="text-[rgb(122,58,255)] hover:underline">MME</a>, a leading Swiss law firm specializing in legal, tax, and compliance for digital organizations. MME counsel is included in your one-time setup fee. Additional legal work beyond formation is available through MME, billed separately.
                 </p>
               </div>
             </ScrollReveal>

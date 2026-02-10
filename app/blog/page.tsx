@@ -21,9 +21,9 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="border-b border-gray-100 bg-gray-50/50">
         <div className="container mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
-          <h1 className="text-4xl font-bold tracking-tight md:text-5xl animate-fade-in-up">Blog</h1>
+          <h1 className="text-4xl font-bold tracking-tight md:text-5xl animate-fade-in-up">From the Field</h1>
           <p className="mt-4 text-lg text-muted-foreground animate-fade-in-up" style={{ animationDelay: "100ms" }}>
-            Updates, insights, and resources for global teams.
+            On ops, entities, and running a global team without losing your mind.
           </p>
         </div>
       </section>

@@ -136,6 +136,73 @@ export default function SwissEntityPage() {
         </div>
       </section>
 
+      {/* MME Legal Partner */}
+      <section className="border-t border-gray-200">
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 bg-[rgba(122,58,255,0.1)] border border-[rgba(122,58,255,0.2)] rounded-full px-4 py-1.5 mb-6">
+                <span className="text-xs text-[rgb(122,58,255)]">Legal Partner</span>
+              </div>
+              <h2 className="text-2xl font-bold">Your legal setup, handled by experts</h2>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10 shadow-sm">
+              <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start">
+                <div className="flex flex-col items-center md:items-start gap-3">
+                  <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src="/MME_logo.jpg"
+                      alt="MME Legal | Tax | Compliance"
+                      width={160}
+                      height={60}
+                      className="object-contain"
+                    />
+                  </a>
+                  <p className="text-xs text-gray-400 text-center md:text-left">Zurich &middot; Zug</p>
+                </div>
+
+                <div>
+                  <p className="text-gray-600 mb-6">
+                    Entity formation is handled by <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer" className="text-[rgb(122,58,255)] hover:underline">MME</a>, a leading Swiss law firm specializing in legal, tax, and compliance for digital and blockchain-native organizations. MME has advised on some of the most recognized projects in the ecosystem.
+                  </p>
+
+                  <h3 className="font-semibold text-sm text-gray-900 mb-3">What&apos;s included in formation</h3>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                      <span className="text-sm text-gray-600">Founding meeting with MME counsel</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                      <span className="text-sm text-gray-600">Articles of association &amp; governing documents</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                      <span className="text-sm text-gray-600">Formation certificate</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                      <span className="text-sm text-gray-600">Workshop &amp; Q&amp;A session on structure and governance</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                      <span className="text-sm text-gray-600">Regulatory assessment for your specific use case</span>
+                    </li>
+                  </ul>
+
+                  <p className="text-sm text-gray-400">
+                    MME counsel is included in your one-time setup fee.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* What you can / can't do */}
       <section className="border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-6 py-16">
@@ -317,71 +384,6 @@ export default function SwissEntityPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* MME Legal Partner */}
-      <section className="border-t border-gray-200 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 py-16">
-          <ScrollReveal>
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[rgba(122,58,255,0.1)] border border-[rgba(122,58,255,0.2)] rounded-full px-4 py-1.5 mb-6">
-                <span className="text-xs text-[rgb(122,58,255)]">Legal Partner</span>
-              </div>
-              <h2 className="text-2xl font-bold">Your legal setup, handled by experts</h2>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={100}>
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10 shadow-sm">
-              <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start">
-                <div className="flex flex-col items-center md:items-start gap-3">
-                  <Image
-                    src="/MME_logo.jpg"
-                    alt="MME Legal | Tax | Compliance"
-                    width={160}
-                    height={60}
-                    className="object-contain"
-                  />
-                  <p className="text-xs text-gray-400 text-center md:text-left">Zurich &middot; Zug</p>
-                </div>
-
-                <div>
-                  <p className="text-gray-600 mb-6">
-                    Entity formation is handled by MME, a leading Swiss law firm specializing in legal, tax, and compliance for digital and blockchain-native organizations. MME has advised on some of the most recognized projects in the ecosystem.
-                  </p>
-
-                  <h3 className="font-semibold text-sm text-gray-900 mb-3">What&apos;s included in formation</h3>
-                  <ul className="space-y-2 mb-6">
-                    <li className="flex items-start gap-3">
-                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-600">Founding meeting with MME counsel</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-600">Articles of association &amp; governing documents</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-600">Formation certificate</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-600">Workshop &amp; Q&amp;A session on structure and governance</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="w-4 h-4 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-600">Regulatory assessment for your specific use case</span>
-                    </li>
-                  </ul>
-
-                  <p className="text-sm text-gray-400">
-                    MME counsel is included in your one-time setup fee.
-                  </p>
-                </div>
-              </div>
             </div>
           </ScrollReveal>
         </div>
