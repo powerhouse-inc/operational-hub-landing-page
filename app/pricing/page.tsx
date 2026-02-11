@@ -218,7 +218,7 @@ export default function PricingPage() {
               </div>
               <h2 className="text-2xl font-bold mb-3">What&apos;s included in your setup fee</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Entity formation is handled by <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer" className="text-[rgb(122,58,255)] hover:underline">MME</a>, a leading Swiss law firm specializing in digital and blockchain-native organizations.
+                Entity formation is supported by <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer" className="text-[rgb(122,58,255)] hover:underline">MME</a>, a leading Swiss law firm specializing in digital and blockchain-native organizations.
               </p>
             </div>
           </ScrollReveal>
@@ -231,7 +231,7 @@ export default function PricingPage() {
                 </div>
                 <h3 className="font-semibold mb-2">Founding meeting</h3>
                 <p className="text-sm text-gray-600">
-                  Formal constitution of your Swiss association with MME counsel, including review of structure, governance, and member rights.
+                  Formal constitution of your Swiss association, including review of structure, governance, and member rights.
                 </p>
               </div>
             </ScrollReveal>
@@ -255,7 +255,7 @@ export default function PricingPage() {
                 </div>
                 <h3 className="font-semibold mb-2">Workshop &amp; Q&amp;A</h3>
                 <p className="text-sm text-gray-600">
-                  Dedicated session with MME to walk through your entity structure, answer questions, and align on governance and compliance.
+                  Dedicated session to walk through your entity structure, answer questions, and align on governance and compliance.
                 </p>
               </div>
             </ScrollReveal>
@@ -539,7 +539,7 @@ export default function PricingPage() {
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="font-semibold mb-2">What about legal support?</h3>
                 <p className="text-gray-600 text-sm">
-                  Entity formation is handled by <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer" className="text-[rgb(122,58,255)] hover:underline">MME</a>, a leading Swiss law firm specializing in legal, tax, and compliance for digital organizations. MME counsel is included in your one-time setup fee. Additional legal work beyond formation is available through MME, billed separately.
+                  The legal setup process is supported by <a href="https://www.mme.ch/en/" target="_blank" rel="noopener noreferrer" className="text-[rgb(122,58,255)] hover:underline">MME</a>, a leading Swiss law firm specializing in legal, tax, and compliance for digital organizations. Legal support is included in your one-time setup fee.
                 </p>
               </div>
             </ScrollReveal>
