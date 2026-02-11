@@ -15,14 +15,22 @@ export default function ContactPage() {
       const cal = await getCalApi({"namespace":"30min"})
       cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#7A3AFF"}},"hideEventTypeDetails":false,"layout":"month_view"})
 
-      // Track booking completion in Plausible
+      // Track booking completion in Plausible + Google Ads
       cal("on", {
         action: "bookingSuccessful",
         callback: () => {
+          console.log("[OH] Cal.com bookingSuccessful fired")
           // @ts-expect-error plausible is loaded globally
           if (typeof window.plausible !== 'undefined') {
             // @ts-expect-error plausible is loaded globally
             window.plausible('Call Booked')
+            console.log("[OH] Plausible 'Call Booked' event sent")
+          }
+          // @ts-expect-error gtag is loaded globally
+          if (typeof window.gtag !== 'undefined') {
+            // @ts-expect-error gtag is loaded globally
+            window.gtag('event', 'conversion', { send_to: 'AW-17947446809/call_booked' })
+            console.log("[OH] Google Ads conversion event sent")
           }
         }
       })
