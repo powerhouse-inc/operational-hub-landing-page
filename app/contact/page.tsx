@@ -29,7 +29,7 @@ export default function ContactPage() {
           // @ts-expect-error gtag is loaded globally
           if (typeof window.gtag !== 'undefined') {
             // @ts-expect-error gtag is loaded globally
-            window.gtag('event', 'conversion', { send_to: 'AW-17947446809/call_booked' })
+            window.gtag('event', 'conversion', { send_to: 'AW-17947446809/yA5jCPXv7vYbEJmcge5C', value: 1.0, currency: 'USD' })
             console.log("[OH] Google Ads conversion event sent")
           }
         }
