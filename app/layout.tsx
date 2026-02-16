@@ -76,6 +76,11 @@ export default function RootLayout({
           src="//code.tidio.co/ancmxjjdvucrx5im4lufpphaiipclvf2.js"
           strategy="afterInteractive"
         />
+        {/* Beehiiv attribution tracking (UTM forwarding) */}
+        <Script
+          src="https://subscribe-forms.beehiiv.com/attribution.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
