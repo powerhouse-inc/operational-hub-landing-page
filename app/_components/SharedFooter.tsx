@@ -9,12 +9,6 @@ const footerLinks = {
       { label: "What's Included", href: "/included" },
       { label: "Swiss Entity", href: "/swiss-entity" },
       { label: "Pricing", href: "/pricing" },
-    ],
-  },
-  company: {
-    title: "Company",
-    links: [
-      { label: "About Achra", href: "https://achra.com" },
       { label: "Contact", href: "/contact" },
     ],
   },
@@ -28,6 +22,7 @@ const footerLinks = {
     title: "Ecosystem",
     links: [
       { label: "Powerhouse", href: "https://www.powerhouse.inc" },
+      { label: "Achra", href: "https://achra.com" },
       { label: "Vetra", href: "https://www.vetra.io" },
     ],
   },
@@ -64,10 +59,10 @@ export function SharedFooter() {
 
       <div className="max-w-6xl mx-auto px-6 py-12">
         {/* Main footer content */}
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
           {/* Logo and tagline */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/opshub">
+            <a href="https://achra.com" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/brand/achra-logo.png"
                 alt="Achra"
@@ -75,7 +70,7 @@ export function SharedFooter() {
                 height={28}
                 className="h-6 w-auto"
               />
-            </Link>
+            </a>
             <p className="mt-3 text-sm text-gray-500">
               Less admin. More building.
             </p>
