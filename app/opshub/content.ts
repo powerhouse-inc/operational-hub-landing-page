@@ -323,7 +323,7 @@ export const achraPlatform = {
 export const poweredByPowerhouse = {
   tagline: "Powered by Powerhouse",
   description: "Powerhouse builds tools and infrastructure for decentralized organizations. We help teams coordinate globally with open-source software and operational support.",
-  cta: { label: "Learn more", href: "https://www.powerhousesno.org" },
+  cta: { label: "Learn more", href: "https://powerhouse.io" },
   vetra: { label: "Explore Vetra", href: "https://www.vetra.io" },
 }
 
