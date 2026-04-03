@@ -108,7 +108,7 @@ export default function ContactPage() {
             <div className="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden min-h-[650px]">
               <Cal
                 namespace="30min"
-                calLink="layer-zero-b9nh0v/30min"
+                calLink="kilgore-powerhouse-qnre42/30min"
                 style={{ width: "100%", height: "100%", minHeight: "650px" }}
                 config={{ layout: "month_view", theme: "light" }}
               />
